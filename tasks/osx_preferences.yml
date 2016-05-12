@@ -1,0 +1,11 @@
+---
+- name: "OS X | ensure user directory is present"
+  file:
+    dest: "{{ ansible_user_dir }}/Library/Application Support/Sublime Text 3/Packages/User"
+    state: directory
+  when: sublime_preferences != "" and ansible_os_family == "Darwin"
+
+- name: "OS X | configure sublime user settings"
+  copy:
+    src: "{{ sublime_prefs }}"
+    dest: "{{ ansible_user_dir }}/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"

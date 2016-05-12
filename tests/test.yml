@@ -1,0 +1,4 @@
+- hosts: all
+  roles:
+    - name: run whole shebang
+      role: ../../ansible-role-sublime

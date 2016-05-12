@@ -1,0 +1,12 @@
+---
+- include: debian_preferences.yml
+  when: ansible_os_family == "Debian" and sublime_include_prefs
+
+- include: osx_install.yml
+  when: ansible_os_family == "Darwin"
+
+- include: osx_package_control.yml
+  when: ansible_os_family == "Darwin" and sublime_packages != []
+
+- include: osx_preferences.yml
+  when: ansible_os_family == "Darwin" and sublime_include_prefs

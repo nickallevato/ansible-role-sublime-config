@@ -1,0 +1,18 @@
+---
+__source: "https://download.sublimetext.com"
+__arch: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
+
+__pc_url: "https://packagecontrol.io/Package%20Control.sublime-package"
+
+# debian
+__url_deb: "{{ __source }}/sublime-text_build-{{ sublime_build }}_{{ __arch }}.deb"
+__tmp_deb: "/tmp/{{ sublime_build }}sublimetext.deb"
+__deb_pc_dir: "{{ ansible_user_dir }}/.config/sublime-text-3/Installed Packages"
+__deb_pc_user_dir: "{{ ansible_user_dir }}/.config/sublime-text-3/Packages/User"
+
+# os x
+__url_dmg: "{{ __source }}/Sublime%20Text%20Build%20{{ sublime_build }}.dmg"
+__tmp_dmg: "/tmp/{{ sublime_build }}sublimetext.dmg"
+__mount: "/Volumes/Sublime Text/"
+__osx_pc_dir: "{{ ansible_user_dir }}/Library/Application Support/Sublime Text 3/Installed Packages"
+__osx_pc_user_dir: "{{ ansible_user_dir }}/Library/Application Support/Sublime Text 3/Packages/User"
