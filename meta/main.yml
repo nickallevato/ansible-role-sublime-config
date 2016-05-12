@@ -1,7 +1,9 @@
 ---
+dependencies: []
+
 galaxy_info:
   author: theNewFlesh
-  description: install and configure sublime text 3
+  description: configure sublime text 3 package control and preferences
   license: MIT
   min_ansible_version: 2.0.0
   platforms:
