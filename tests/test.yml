@@ -1,4 +1,10 @@
-- hosts: all
+- hosts: dev
+  vars:
+    sublime_packages: ["Colorsublime"]
+    sublime_include_prefs: true
+    sublime_prefs: ../files/Preferences.sublime-settings
+    sublime_package_control_owner: "{{ ansible_ssh_user }}"
+    sublime_package_control_group: sudo
+    sublime_package_control_backup: true
   roles:
-    - name: run whole shebang
-      role: ../../ansible-role-sublime
+    - role: ../..

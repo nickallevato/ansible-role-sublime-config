@@ -1,1 +1,28 @@
-localhost ansible_connection=local
+ansible-master ansible_ssh_host=192.168.1.186
+# parallels1 ansible_ssh_host=192.168.1.185 ansible_ssh_user=parallels
+# parallels2 ansible_ssh_host=10.211.55.3 ansible_ssh_user=parallels
+# parallels3 ansible_ssh_host=10.0.0.134 ansible_ssh_user=parallels
+# parallels4 ansible_ssh_host=192.168.1.220 ansible_ssh_user=parallels
+# parallels5 ansible_ssh_host=192.168.1.148 ansible_ssh_user=parallels
+# parallels6 ansible_ssh_host=192.168.1.215 ansible_ssh_user=parallels
+parallels1 ansible_ssh_host=192.168.1.185
+parallels2 ansible_ssh_host=10.211.55.3
+parallels3 ansible_ssh_host=10.0.0.134
+parallels4 ansible_ssh_host=192.168.1.220
+parallels5 ansible_ssh_host=192.168.1.148
+parallels6 ansible_ssh_host=192.168.1.215
+
+[local]
+127.0.0.1
+
+[dev-debian]
+parallels6
+
+[dev-osx]
+
+[dev:children]
+dev-debian
+dev-osx
+
+[alex:children]
+dev

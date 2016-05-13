@@ -2,6 +2,6 @@
 sublime_packages: []
 sublime_include_prefs: false
 sublime_prefs: ../files/Preferences.sublime-settings
-sublime_package_control_owner: "{{ ansible_ssh_user }}"
-sublime_package_control_group: "{{ ansible_ssh_user }}"
 sublime_package_control_backup: true
+# sublime_package_control_owner: "{{ ansible_ssh_user }}"
+# sublime_package_control_group: "{{ ansible_ssh_user }}"
