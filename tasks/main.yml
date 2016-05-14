@@ -1,4 +1,5 @@
 ---
+# TODO: delay preferences until all packages are installed
 - include: debian_package_control.yml
   when: ansible_os_family == "Debian" and sublime_packages != []
 
