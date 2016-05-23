@@ -1,7 +1,25 @@
 - hosts: dev
   vars:
-    sublime_packages: ["Colorsublime"]
-    sublime_include_prefs: true
+    sublime_packages:
+      - "Package Control"
+      - "Colorsublime"
+      - "Material Theme"
+      - "One Dark Material - Theme"
+      - "Alignment"
+      - "All Autocomplete"
+      - "Babel"
+      - "BinaryPlist"
+      - "ColorPicker"
+      - "Fold Python Docstrings"
+      - "GitGutter"
+      - "Markdown Preview"
+      - "Pretty JSON"
+      - "Python Improved"
+      - "React Templates"
+      - "ReactJS Snippets"
+      - "SublimeCodeIntel"
+      - "JSONLint"
+    sublime_include_prefs: false
     sublime_prefs: ../files/Preferences.sublime-settings
     sublime_package_control_owner: "{{ ansible_ssh_user }}"
     sublime_package_control_group: sudo
