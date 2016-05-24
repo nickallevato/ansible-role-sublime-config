@@ -1,7 +1,149 @@
 ---
 sublime_packages: []
-sublime_include_prefs: false
-sublime_prefs: ../files/Preferences.sublime-settings
-sublime_package_control_backup: true
-# sublime_package_control_owner: "{{ ansible_ssh_user }}"
-# sublime_package_control_group: "{{ ansible_ssh_user }}"
+sublime_include_prefs: true
+sublime_user: "{{ ansible_ssh_user }}"
+sublime_user_group: "{{ ansible_ssh_user }}"
+
+sublime_color_scheme: 'Packages/Color Scheme - Default/Monokai.tmTheme'
+sublime_font_face: ''
+sublime_font_size: 10.0
+sublime_font_options: []
+sublime_word_separators: "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+sublime_line_numbers: true
+sublime_gutter: true
+sublime_margin: 4
+sublime_fold_buttons: true
+sublime_fade_fold_buttons: true
+sublime_rulers: []
+sublime_spell_check: false
+sublime_tab_size: 4
+sublime_translate_tabs_to_spaces: false
+sublime_use_tab_stops: true
+sublime_detect_indentation: true
+sublime_auto_indent: true
+sublime_smart_indent: true
+sublime_indent_to_bracket: false
+sublime_trim_automatic_white_space: true
+sublime_word_wrap: 'auto'
+sublime_wrap_width: 0
+sublime_indent_subsequent_lines: true
+sublime_draw_centered: false
+sublime_auto_match_enabled: true
+sublime_dictionary: 'Packages/Language - English/en_US.dic'
+sublime_spelling_selector: 'markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)'
+sublime_draw_minimap_border: false
+sublime_always_show_minimap_viewport: false
+sublime_highlight_line: false
+sublime_caret_style: 'smooth'
+sublime_caret_extra_top: 0
+sublime_caret_extra_bottom: 0
+sublime_caret_extra_width: 0
+sublime_match_brackets: true
+sublime_match_brackets_content: true
+sublime_match_brackets_square: true
+sublime_match_brackets_braces: true
+sublime_match_brackets_angle: false
+sublime_match_tags: true
+sublime_match_selection: true
+sublime_line_padding_top: 0
+sublime_line_padding_bottom: 0
+sublime_scroll_past_end: true
+sublime_move_to_limit_on_up_down: false
+sublime_draw_white_space: 'selection'
+sublime_draw_indent_guides: true
+sublime_indent_guide_options: ['draw_normal']
+sublime_trim_trailing_white_space_on_save: false
+sublime_ensure_newline_at_eof_on_save: false
+sublime_save_on_focus_lost: false
+sublime_atomic_save: false
+sublime_fallback_encoding: 'Western (Windows 1252)'
+sublime_default_encoding: 'UTF-8'
+sublime_enable_hexadecimal_encoding: true
+sublime_default_line_ending: 'system'
+sublime_tab_completion: true
+sublime_auto_complete: true
+sublime_auto_complete_size_limit: 4194304
+sublime_auto_complete_delay: 50
+sublime_auto_complete_selector: 'meta.tag - punctuation.definition.tag.begin, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc'
+sublime_auto_complete_triggers: {'selector': 'text.html', 'characters': '<'}
+sublime_auto_complete_commit_on_tab: false
+sublime_auto_complete_with_fields: false
+sublime_auto_complete_cycle: false
+sublime_auto_close_tags: true
+sublime_shift_tab_unindent: false
+sublime_copy_with_empty_selection: true
+sublime_find_selected_text: true
+sublime_auto_find_in_selection: false
+sublime_drag_text: true
+sublime_theme: 'Default.sublime-theme'
+sublime_scroll_speed: 1.0
+sublime_tree_animation_enabled: true
+sublime_animation_enabled: true
+sublime_highlight_modified_tabs: false
+sublime_show_tab_close_buttons: true
+sublime_bold_folder_labels: false
+sublime_use_simple_full_screen: false
+sublime_gpu_window_buffer: 'auto'
+sublime_overlay_scroll_bars: 'system'
+sublime_enable_tab_scrolling: true
+sublime_show_encoding: false
+sublime_show_line_endings: false
+sublime_hot_exit: true
+sublime_remember_full_screen: false
+sublime_always_prompt_for_file_reload: false
+sublime_open_files_in_new_window: true
+sublime_create_window_at_startup: true
+sublime_close_windows_when_empty: false
+sublime_show_full_path: true
+sublime_show_panel_on_build: true
+sublime_preview_on_click: true
+sublime_binary_file_patterns:
+  - '*.jpg'
+  - '*.jpeg'
+  - '*.png'
+  - '*.gif'
+  - '*.ttf'
+  - '*.tga'
+  - '*.dds'
+  - '*.ico'
+  - '*.eot'
+  - '*.pdf'
+  - '*.swf'
+  - '*.jar'
+  - '*.zip'
+sublime_index_files: true
+sublime_index_workers: 0
+sublime_index_exclude_patterns:
+  - '*.log'
+sublime_ignored_packages:
+  - 'Vintage'
+sublime_folder_exclude_patterns:
+  - '.svn'
+  - '.git'
+  - '.hg'
+  - 'CVS'
+  - '.ipynb'
+sublime_file_exclude_patterns:
+  - '*.pyc'
+  - '*.pyo'
+  - '*.exe'
+  - '*.dll'
+  - '*.obj'
+  - '*.o'
+  - '*.a'
+  - '*.lib'
+  - '*.so'
+  - '*.dylib'
+  - '*.ncb'
+  - '*.sdf'
+  - '*.suo'
+  - '*.pdb'
+  - '*.idb'
+  - '.DS_Store'
+  - '*.class'
+  - '*.psd'
+  - '*.db'
+  - '*.sublime-workspace'
+  - '*.retry'
+
+sublime_extras: {}

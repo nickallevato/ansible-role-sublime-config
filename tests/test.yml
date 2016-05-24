@@ -1,5 +1,6 @@
 - hosts: dev
   vars:
+    sublime_include_prefs: true
     sublime_packages:
       - "Package Control"
       - "Colorsublime"
@@ -20,9 +21,26 @@
       - "SublimeCodeIntel"
       - "JSONLint"
     sublime_include_prefs: false
-    sublime_prefs: ../files/Preferences.sublime-settings
-    sublime_package_control_owner: "{{ ansible_ssh_user }}"
-    sublime_package_control_group: sudo
     sublime_package_control_backup: true
+    sublime_auto_complete_cycle: true
+    # sublime_color_scheme: "Packages/Colorsublime - Themes/Henanigans.tmTheme"
+    # sublime_theme: "Material-Theme-Darker.sublime-theme"
+    sublime_copy_with_empty_selection: false
+    sublime_create_window_at_startup: true
+    sublime_draw_white_space: "selection"
+    sublime_ensure_newline_at_eof_on_save: true
+    sublime_margin: 2
+    sublime_open_files_in_new_window: false
+    sublime_rulers: [80]
+    sublime_scroll_speed: 5.0
+    sublime_shift_tab_unindent: true
+    sublime_tab_size: 4
+    sublime_translate_tabs_to_spaces: true
+    sublime_trim_trailing_white_space_on_save: true
+    sublime_extras:
+      material_theme_compact_sidebar: true
+      material_theme_small_statusbar: true
+      material_theme_small_tab: true
   roles:
     - role: ../..
+      become: true

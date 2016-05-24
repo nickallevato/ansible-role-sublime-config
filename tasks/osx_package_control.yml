@@ -1,11 +1,11 @@
 ---
-- name: "OS X | package control | ensure package dirs owner and permissions"
+- name: "OS X | package control | ensure package control permissions"
   file:
     state: directory
     path: "{{ item }}"
-    mode: "u=rwx,g=rx,o=rx"
-    # owner: "{{ sublime_package_control_owner }}"
-    # group: "{{ sublime_package_control_group }}"
+    mode: 0774
+    owner: "{{ sublime_user }}"
+    group: "{{ sublime_user_group }}"
   with_items:
     - "{{ __osx_pc_dir }}"
     - "{{ __osx_pc_user_dir }}"
@@ -14,15 +14,15 @@
   get_url:
     url: "{{ __pc_url }}"
     dest: "{{ __osx_pc_dir }}/Package Control.sublime-package"
-    mode: "u=rw,g=rw,o=rw"
-    # owner: "{{ sublime_package_control_owner }}"
-    # group: "{{ sublime_package_control_group }}"
+    mode: 0774
+    owner: "{{ sublime_user }}"
+    group: "{{ sublime_user_group }}"
 
 - name: "OS X | package control | generate 'Package Control.sublime-settings'"
   template:
     src: ../templates/Package Control.sublime-settings.j2
     dest: "{{ __osx_pc_user_dir }}/Package Control.sublime-settings"
-    mode: "u=rw,g=rw,o=rw"
-    # owner: "{{ sublime_package_control_owner }}"
-    # group: "{{ sublime_package_control_group }}"
+    mode: 0774
+    owner: "{{ sublime_user }}"
+    group: "{{ sublime_user_group }}"
     backup: "{{ sublime_package_control_backup }}"
