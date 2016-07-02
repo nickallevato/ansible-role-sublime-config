@@ -25,4 +25,3 @@
     mode: 0774
     owner: "{{ sublime_user }}"
     group: "{{ sublime_user_group }}"
-    backup: "{{ sublime_package_control_backup }}"

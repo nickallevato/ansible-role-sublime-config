@@ -5,7 +5,7 @@ sublime_include_packages: true
 sublime_include_prefs: true
 sublime_include_hotkeys: true
 sublime_user: "{{ ansible_ssh_user }}"
-sublime_user_group: "{{ ansible_ssh_user }}"
+sublime_user_group: "{% if ansible_os_family == 'Darwin' %}staff{% else %}{{ sublime_user }}{% endif %}"
 
 # preferences
 sublime_color_scheme: 'Packages/Color Scheme - Default/Monokai.tmTheme'

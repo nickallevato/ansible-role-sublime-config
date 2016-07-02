@@ -6,7 +6,6 @@
     mode: 0774
     owner: "{{ sublime_user }}"
     group: "{{ sublime_user_group }}"
-  when: sublime_preferences != "" and ansible_os_family == "Darwin"
 
 - name: "OS X | configure sublime user settings"
   template:
