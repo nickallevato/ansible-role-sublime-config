@@ -64,6 +64,7 @@ sublime_fallback_encoding: 'Western (Windows 1252)'
 sublime_default_encoding: 'UTF-8'
 sublime_enable_hexadecimal_encoding: true
 sublime_default_line_ending: 'system'
+sublime_show_definitions: true
 sublime_tab_completion: true
 sublime_auto_complete: true
 sublime_auto_complete_size_limit: 4194304
